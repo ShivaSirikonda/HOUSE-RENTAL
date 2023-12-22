@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name = "viewport" content="width-device-width,intial-scale = 1.0">
+        <title>Add Your House</title>
+        <!-- css -->
+        <link rel="stylesheet" href="/css/newHouse.css">
+        <!-- boxicons -->
+        <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+</head>
+<header>
+    <a href="/" class="logo"> <img src="img/logo.png" alt=""></a>
+    <div class="header-btn">
+        <a href="/sign-out" class="sign-out">sign-out</a>
+    </div>
+</header>
+<body>
+    <div class="container">
+        <form action="/addNewHouse" method="post" enctype="multipart/form-data">
+            <div class="form first">
+                <div class="details personal">
+                    <span class="title">Owner details</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Full Name</label>
+                            <input type="text" name="name" placeholder="Enter your name" required>
+                        </div>
+                        <div class="input-field">
+                            <label>Email</label>
+                            <input type="email" name="email" placeholder="Enter your Email" required>
+                        </div>
+                        <div class="input-field">
+                            <label>Mobile Number</label>
+                            <input type="text" name="phone" placeholder="Enter mobile number" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="details Address">
+                    <span class="title">Address</span>
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>House Name</label>
+                            <input type="text" name="house_name" placeholder="Enter your house name" required>
+                        </div>
+                        <div class="input-field">
+                            <label>Door-no</label>
+                            <input type="text" name="door_no" placeholder="Enter your door-no" required>
+                        </div>
+                        <div class="input-field">
+                            <label>Street Name</label>
+                            <input type="text" name="street" placeholder="Enter your Street name" required>
+                        </div>
+                        <div class="input-field">
+                            <label>City</label>
+                            <input type="text" name="city" placeholder="Enter your City name" required>
+                        </div>
+                        <div class="input-field">
+                            <label>State</label>
+                            <input type="text" name="state" placeholder="Enter your State" required>
+                        </div>
+                        <div class="input-field">
+                            <label>pincode</label>
+                            <input type="text"name="pincode"  placeholder="Enter your pincode" required>
+                        </div>
+                        <div class="input-field fileUpload">
+                            <label>Upload Image</label>
+                            <input type="file" name="uploaded_file">
+                        </div>
+                        <div class="input-field">
+                            <label>Cost per month</label>
+                            <input type="text" name="cost" placeholder="Enter your rent amount" required>
+                        </div>
+                    </div>
+                    <div class="input-field">                  
+                        <input type="submit" value="Submit">
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

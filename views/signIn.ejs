@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="/css/signIn.css">
+</head>
+<body>
+        <header>
+            <a href="/" class="logo"> <img src="img/logo.png" alt=""></a>
+            <!-- <div class="header-btn">
+                <a href="/" class="Home">Website</a>
+            </div> -->
+        </header>
+        <main>
+            <section class="user-container login-section--display">
+                <div class="login">
+                    <div class="grid-two--column">
+                        <div class="form-text">
+                            <h2>Hello Friend!</h2>
+                            <p>Enter your personal details and start journey with us</p>
+                            <a href="sign-up" class="sign-up-here">Sign up here</a>
+                        </div>
+                        <div class="login-form">
+                            <h2>sign In account</h2>
+                            <div class="social-icons">
+                                <i class='bx bxl-discord'></i>
+                                <i class='bx bxl-facebook'></i>
+                                <i class='bx bxl-google' ></i>
+                                <i class='bx bxl-linkedin' ></i>
+                            </div>
+                            <p>or use your account</p>
+                            <form action="/create-session" method="post">
+                                <div class="input-flied">
+                                    <label for="email">
+                                        <input type="email" name="email" placeholder="abc@gmail.com" required>
+                                    </label>
+                                </div>
+                                <div class="input-flied">
+                                    <label for="password">
+                                        <input type="password" name="password" placeholder="password" required>
+                                    </label>
+                                </div>
+                                <div class="input-flied">                  
+                                    <input type="submit" value="login">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    <script src="/js/signIn.js"></script>
+</body>
+</html>

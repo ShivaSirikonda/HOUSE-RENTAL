@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="/css/signUp.css">
+</head>
+<body>
+        <header>
+            <a href="/" class="logo"> <img src="img/logo.png" alt=""></a>
+            <!-- <div class="header-btn">
+                <a href="/" class="Home">Website</a>
+            </div> -->
+        </header>
+        <main>
+            <section class="user-container login-section--display">
+                <div class="registration">
+                    <div class="grid-two--column">
+                        <div class="form-text">
+                            <h2>Welcome Back!</h2>
+                            <p>To Keep connencted with us please login with your personal info</p>
+                            <a href="sign-in" class="sign-in-here">Login-here </a>
+                        </div>
+                        <div class="registration-form">
+                            <h2>create account</h2>
+                            <div class="social-icons">
+                                <i class='bx bxl-discord'></i>
+                                <i class='bx bxl-facebook'></i>
+                                <i class='bx bxl-google' ></i>
+                                <i class='bx bxl-linkedin' ></i>
+                            </div>
+                            <p>or use email for registration</p>
+                            <form action="/create" method="post">
+                                <div class="input-flied">
+                                    <label for="username">
+                                    <input type="text" name="name" placeholder="Name" required>
+                                    </label>
+                                </div>
+                                <div class="input-flied">
+                                    <label for="email">
+                                        <input type="email" name="email" placeholder="abc@gmail.com" required>
+                                    </label>
+                                </div>
+                                <div class="input-flied">
+                                    <label for="password">
+                                        <input type="password" name="password" placeholder="password" required>
+                                    </label>
+                                </div>
+                                <div class="input-flied">
+                                    <label for="password">
+                                        <input type="password" name="confirm_password" placeholder="confirm_password" required>
+                                    </label>
+                                </div>
+                                <div class="input-flied">                    
+                                    <input type="submit" value="register">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    <script src="/js/signUp.js"></script>
+</body>
+</html>

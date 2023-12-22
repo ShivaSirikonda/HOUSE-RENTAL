@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-padding-top: 2rem;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Poppins",sans-serif;
+}
+#menu-icon{
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 10001;
+    display: none;
+}
+:root{
+    --main-color : #fe5b3d;
+    --second-color : #ffac38;
+    --text-color : #444;
+    --gradient : linear-gradient(#fe5b3d,#ffac38);
+}
+html{
+    font-size: 62.5%;
+}
+h1,h2,h3,h4{
+    font-family: 'Lexend Deca', sans-serif;
+}
+h1{
+    font-size: 4.8rem;
+}
+h2{
+    font-size: 3rem;
+}
+p{
+    font-size: 1.6rem;
+    letter-spacing: 0.08rem;
+}
+.logo img{
+    width:  49px;
+}
+main{
+    background-image: url(../img/signup-interior.jpg);
+    height: 100vh;
+}
+header{
+    position: fixed;
+    width: 100%;
+    top : 0;
+    right : 0;
+    z-index : 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #eeeff1;
+    padding: 15px 100px;
+}
+.header-btn .Home{
+    padding: 10px 20px;
+    color: var(--text-color);
+    font-weight: 500;
+    font-size: 1.5rem;
+    background: #474fa0;
+    color: #fff;
+    border-radius: 1rem;
+
+}
+.header-btn .Home:hover{
+    background: var(--main-color);  
+}
+button, input[type = "submit"]{
+    border: .1rem solid #fff;
+    outline: none;
+    padding: 0.6rem 1.2rem;
+    font-size: 1.7rem;
+    text-transform: capitalize;
+    letter-spacing: 0.05rem;
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+}
+ /* page styling */
+ .registration-header{
+    height: 100vh;
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../img/signup-interior.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+ }
+
+/* header .registration-header {
+    font-size: 1.2rem;
+    font-family: "Poppins",sans-serif;
+} */
+.registration-header .container li a{
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+}
+.registration-header .container li a:hover{
+    color: var(--main-color);
+}
+.container{
+    height: 10vh;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: var(--main-color); */
+
+}
+.logo a{
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+    display: flex;
+    gap : 2rem;
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+li > a{
+    color: #fff;
+    text-decoration: none;
+}
+
+/* home page styling */
+
+
+/* registration page styling */
+main{
+    min-height: 80vh;
+    display: flex;
+    margin: auto;
+    padding-top: 25vh;
+    justify-content: center;
+    align-items: center;
+}
+.registration, .login{
+    min-width: 30rem;
+    /* min-height: 25vw; */
+    background-color: aquamarine;
+}
+
+.grid-two--column{
+    display: grid;
+    justify-content: c;
+    grid-template-columns: repeat(2,1fr);
+}
+
+/* .grid-two--column {} */
+.form-text{
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../img/signIn.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 3rem 2rem;
+}
+.sign-up-here{
+    text-align: center;
+    width: 20rem;
+    margin: 0.7rem 0;
+    border: none;
+    background-color: #e8e8e8;
+    padding: 1rem 1.8rem;
+    margin-top: 1rem;
+    min-width: 10rem;
+    background-color: #474fa0;
+    color: #fff;
+    font-size: 15px;
+}
+.sign-up-here:hover{
+    background-color: var(--main-color);
+}
+.login .form-text{
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../img/signUp.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.form-text p{
+    width: 25ch;
+    text-align: center;
+    margin: 2rem 0 3rem 0;
+}
+.form-text button{
+    background-color: #fff;
+    color: #000;
+}
+.form-text button:hover{
+    background-color: var(--main-color);
+    color: #fff;
+}
+.registration-form, .login-form{
+    width: 100%;
+    min-height: 45vh;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.registration-form p,.login-form p{
+    margin: 1rem 0 0.7rem 0;
+}
+.social-icons{
+    display: flex;
+    gap: 1.4rem;
+    margin: 1rem 0 0.6rem 0;
+}
+.bx{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    border: 0.1rem solid #ccc;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size :1.6rem;
+    color: var(--main-color);
+}
+.bx:hover{
+    background: var(--main-color);
+    color: white;
+}
+input{
+    width: 20rem;
+    margin: 0.7rem 0;
+    border: none;
+    background-color: #e8e8e8;
+    padding: 1rem 1.8rem;
+}
+input[type = "submit"]{
+    margin-top: 1rem;
+    min-width: 10rem;
+    background-color:#474fa0;
+    color: #fff;
+}
+input[type = "submit"]:hover{
+    background-color: var(--main-color);
+    color: #fff;
+}
+.user-container{
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width:800px){
+    header{
+        padding: 11px 40px;
+    }
+    #menu-icon{
+        display: initial;
+    }
+    
+    .grid-two--column{
+        grid-template-columns: 1fr;
+    }
+    .registration-header .container .home-header .container{
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .registration-header .container .logo, .home-header .container .logo{
+        padding-top: 2rem;
+    }
+    .form-text{
+        order: 1;
+    }
+    .registration, .login{
+        min-width: 90vh;
+    }
+    .registration, .login{
+        order: 0;
+    }
+    .form-text p{
+        width: 25ch;
+    }
+}
+@media (max-width:350px){
+    header{
+        padding: 6px 14px;
+    }
+    .logo img{
+        width: 30px;
+    }
+    .header-btn .sign-in{
+        padding: 7px 10px;
+        font-size: 14px;
+        font-weight: 400;
+    }
+    .text h1{
+        font-size: 2rem;
+    }
+    .services-container{
+        grid-template-columns: repeat(auto-fit,minmax(254px,auto));
+    }
+}
